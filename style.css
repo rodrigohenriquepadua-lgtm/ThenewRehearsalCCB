@@ -60,8 +60,8 @@ body{
     align-items: center;      /* Centraliza o conteúdo verticalmente (meio da imagem) */
     justify-content: flex-start; /* Garante que o conteúdo comece na esquerda */
     padding-top: 80px;
-
 }
+
 .hero-content {
     color: #fff;
     padding: 20px;
@@ -77,11 +77,11 @@ body{
 
     
 }
-
+@media (max-width:768px){
 .buttons {
     margin-top: 20px;
     }
-
+}
 .btn {
     display: inline-block;
     background-color: #3498db;
@@ -299,4 +299,7 @@ body{
     width: 100%;           /* Ocupa 100% da largura da div #location */
     height: 100%;          /* Ocupa 100% da altura da div #location */
     border: none;
+}
+@media (max-width: 768px) {
+
 }
