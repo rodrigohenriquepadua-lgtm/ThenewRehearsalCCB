@@ -58,8 +58,16 @@ body{
     display: flex;
     align-items: center;      /* Centraliza o conteúdo verticalmente (meio da imagem) */
     justify-content: flex-start; /* Garante que o conteúdo comece na esquerda */
-    padding-top: 80px;
+    padding-top: calc(60px + 20px); 
+    box-sizing: border-box;
 }
+@media (max-width: 768px) {
+    .hero {
+        /* Ajuste proporcional para a barra menor do celular */
+        padding-top: calc(50px + 15px); 
+    }
+}
+
 
 .hero-content {
     color: #fff;
