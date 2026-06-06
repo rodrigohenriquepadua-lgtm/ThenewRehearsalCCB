@@ -15,7 +15,7 @@ body{
     justify-content: space-between;
     font-family: 'American Typewriter', courier, sans-serif; /* Dica: use aspas e fallbacks para fontes com espaço */
     align-items: center;
-    padding: 10px 20px;
+   
     z-index: 10;
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.15);
