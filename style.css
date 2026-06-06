@@ -113,7 +113,7 @@ body{
 }
 .rodape {
     background: #ffffff;
-    margin-top: 40px;
+    margin-top: 0px;
     box-shadow: 0 -4px 15px rgba(0,0,0,0.05);
     border-top: 3px solid #2A7FFF; /* cor destaque */
 }
