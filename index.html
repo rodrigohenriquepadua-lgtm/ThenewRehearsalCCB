@@ -25,13 +25,16 @@
         </nav>
     </header>
     
-    function abrirMenu(){
+   <script>
+        function abrirMenu(){
 
     const menu = document.getElementById("menu");
 
     menu.classList.toggle("ativo");
 
 }
+   </script>
+    
     <section class="hero">
         <div class="hero-content">
             <h1>CCB-Manaus</h1>
@@ -48,6 +51,7 @@
     <div id="mapa"></div>
     
     <script>
+        
     var map = L.map('mapa').setView([-3.119, -60.021], 12);
     map.scrollWheelZoom.disable();
 
