@@ -22,10 +22,21 @@
                 <li><a href="#">Reuniões Técnicas</a></li>
                 <li><a href="calendario-musical.html">Calendário Musical</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
         </nav>
     </header>
     
    <script>
+        const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
         function abrirMenu(){
 
     const menu = document.getElementById("menu");
