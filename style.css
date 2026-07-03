@@ -23,7 +23,7 @@ body{
     }
     /* MENU */
 
-#navLinks{
+#nav-links{
     display: flex;
     list-style: none;
     margin: 0;
