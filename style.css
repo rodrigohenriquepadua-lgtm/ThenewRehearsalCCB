@@ -1,69 +1,84 @@
-body{
-    margin: 0;
+ *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
     font-family: arial;
-    background:#DBDAD7FF;
-    text-align: center;
 }
 
-/* Botão escondido no computador */
-.menu-btn {
-    display: none;
-    background: transparent;
-    border: none;
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: american typewriter;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+    z-index: 10; /* garante que fique na frente */
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2px);
+    }
+
+.navbar .logo {
     color: white;
-    font-size: 25px;
-    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
-
-
-/* Celular */
-@media (max-width: 768px) {
-
-    .navbar {
-        height: 60px;
-        padding: 0 20px;
+ .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+.nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
     }
 
-
-    .menu-btn {
-        display: block;
+    .nav-links a:hover {
+      color: #8b5cf6;
     }
 
+ /* Botão hambúrguer */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
 
-    .navbar ul {
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: white;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
 
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .nav-links {
         position: absolute;
         top: 60px;
         right: 0;
-
-        width: 200px;
-
-        background: rgba(0,0,0,0.8);
-        backdrop-filter: blur(5px);
-
+        background-color: #111827;
         flex-direction: column;
-
-        padding: 20px;
-
+        width: 200px;
+        padding: 15px;
         display: none;
-    }
+      }
 
-
-    .navbar ul.ativo {
+      .nav-links.active {
         display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
     }
-
-
-    .navbar li {
-        margin: 15px 0;
-    }
-
-
-    .navbar a {
-        font-size: 14px;
-    }
-
-}
 
 
 .hero{
@@ -76,16 +91,8 @@ body{
     display: flex;
     align-items: center;      /* Centraliza o conteúdo verticalmente (meio da imagem) */
     justify-content: flex-start; /* Garante que o conteúdo comece na esquerda */
-    padding-top: calc(60px + 20px); 
-    box-sizing: border-box;
+    padding-top: 80px;
 }
-@media (max-width: 768px) {
-    .hero {
-        /* Ajuste proporcional para a barra menor do celular */
-        padding-top: calc(50px + 15px); 
-    }
-}
-
 
 .hero-content {
     color: #fff;
@@ -131,7 +138,7 @@ body{
 }
 .rodape {
     background: #ffffff;
-    margin-top: 0px;
+    margin-top: 40px;
     box-shadow: 0 -4px 15px rgba(0,0,0,0.05);
     border-top: 3px solid #2A7FFF; /* cor destaque */
 }
