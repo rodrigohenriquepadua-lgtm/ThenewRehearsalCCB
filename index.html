@@ -5,7 +5,7 @@
     <meta  name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" Site dos Ensaios e Eventos Musicais da CCB Manaus-Am">
     <title>Ensaios CCB Manaus</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style - copia.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     
@@ -14,7 +14,7 @@
     <header class ="navbar"> 
         <div class = "logo">EVENTOS CCB MANAUS</div>  
         <nav>
-            <ul id="navLinks" class="nav-links">
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="ensaios-locais.html">Ensaios Locais</a></li>
                 <li><a href="#">Ensaios Regionais</a></li>
@@ -25,20 +25,21 @@
             <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
-      <span></span>         
+      <span></span>
+      
+      
     </div>
         </nav>
     </header>
     
    <script>
-        const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
 
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-   </script>
-    
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+</script>    
     <section class="hero">
         <div class="hero-content">
             <h1>CCB-Manaus</h1>
