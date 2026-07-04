@@ -83,7 +83,7 @@ body{
         display: flex;
         order: -1;
     }
-    logo {
+    .logo {
         margin: 0 auto;
     }
 
