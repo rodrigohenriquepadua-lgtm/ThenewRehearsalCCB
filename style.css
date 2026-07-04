@@ -110,7 +110,7 @@ body{
 @media (max-width: 768px) {
 .hero{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(alvorada.png);
-    margin-top: 0;
+    
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
