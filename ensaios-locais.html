@@ -5,31 +5,29 @@
     <title>Ensaios Locais</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-    <header class="navbar"> 
-    <div class="logo">EVENTOS CCB MANAUS</div>  
-
-    <nav>
-        <ul id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ensaios-locais.html">Ensaios Locais</a></li>
-            <li><a href="#">Ensaios Regionais</a></li>
-            <li><a href="#">Testes</a></li>
-            <li><a href="#">Reuniões Técnicas</a></li>
-            <li><a href="#">Calendário Musical</a></li>
-        </ul>
-
-<div class="hamburger" id="hamburger">
+    <body>
+    <header class ="navbar"> 
+        <div class = "logo">EVENTOS CCB MANAUS</div>  
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ensaios-locais.html">Ensaios Locais</a></li>
+                <li><a href="#">Ensaios Regionais</a></li>
+                <li><a href="#">Testes</a></li>
+                <li><a href="#">Reuniões Técnicas</a></li>
+                <li><a href="calendario-musical.html">Calendário Musical</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
       <span></span>
       
       
     </div>
-    </nav>
-</header>
-    <script>
+        </nav>
+    </header>
+    
+   <script>
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 
@@ -37,6 +35,16 @@ hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 </script>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>CCB-Manaus</h1>
+            <p> Cantai-lhe um cântico novo: tocai bem e com Júbilo</p>
+            <p> (Salmos 33:3) </p>
+        </div>
+    </section>
+
+
     <section class="hero">
     <div class="hero-content">
         <h1>Ensaios Locais</h1>
