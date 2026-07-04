@@ -81,6 +81,7 @@ body{
 
     .hamburger {
         display: flex;
+        order: -1;
     }
 
     #nav-links {
