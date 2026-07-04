@@ -83,6 +83,9 @@ body{
         display: flex;
         order: -1;
     }
+    logo {
+        margin: 0 auto;
+    }
 
     #nav-links {
         display: none;
