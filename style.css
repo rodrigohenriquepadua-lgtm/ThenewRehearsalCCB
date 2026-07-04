@@ -110,12 +110,16 @@ body{
 @media (max-width: 768px) {
 .hero{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(alvorada.png);
+    background-position: center;
     background-size: cover;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-
+    height: 50vh;
+    display: flex;
+    
+    justify-content: flex-start; /* Garante que o conteúdo comece na esquerda */
+    padding-top: 60px;
 }
 
 .hero-content {
